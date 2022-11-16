@@ -1,0 +1,43 @@
+\definepapersize[nametag][width=90mm,height=54mm]
+\setuppapersize[nametag]
+\setupbodyfont[dejavu,ss,10pt]
+\setuppagenumbering[state=stop]
+\setuplayout[%
+backspace=2mm,
+topspace=12mm,
+width=86mm,
+height=40mm,
+footer=0mm,
+header=0mm]
+\setupbackgrounds[page][background={logo}]
+\showframe
+\starttext
+\startbuffer[card]
+\definelayer[logo][x=0mm,y=0mm,width=\paperwidth,height=\paperwidth]
+\setlayer[logo][hoffset=0mm,voffset=0mm]{\externalfigure[logo.pdf][height=12mm]}
+\blank[1mm]
+\startalignment[middle]
+\setuptype[style={\switchtobodyfont[16pt]}]
+\getvariable{cardinfo}{name}\break
+\getvariable{cardinfo}{institution}
+\blank[1mm]
+\setuptype[style={\switchtobodyfont[10pt]}]
+COEMS Forsterk Seminar\break
+\setuptype[style={\switchtobodyfont[8pt,tt]}]
+et eller annet navn
+\stopalignment
+\page
+\stopbuffer
+\startluacode
+lines = io.lines("participants.txt")
+while true do
+  local name = lines()
+  if name == nil then break end
+  local institution = lines()
+  if institution == nil then break end
+  context.setvariable("cardinfo","name",name)
+  context.setvariable("cardinfo","institution",institution)
+  context(buffers.getcontent("card"))
+end
+\stopluacode
+\stoptext

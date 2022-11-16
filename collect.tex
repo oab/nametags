@@ -1,0 +1,10 @@
+%A4 is 210*297mm, tag is 90*54
+%we should get 2*5, 10 tags per A4
+\setuppapersize
+  [A4][A4] % or [A4,landscape][A4,landscape]
+
+\setuplayout[width=middle,height=middle]
+
+\starttext
+  \combinepages[card][nx=2,ny=5,frame=on]
+\stoptext
