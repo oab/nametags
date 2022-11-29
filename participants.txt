@@ -1,22 +1,56 @@
-name1
-institution1
-name2
-institution2
-name3
-institution3
-name4
-institution4
-name5
-institution5
-name6
-institution6
-name7
-institution7
-name8
-institution8
-name9
-institution9
-name10
-institution10
-name11
-institution11
+Martin Leucker
+University of Lübeck
+Tao Yue
+Simula Research Laboratory
+Gizem Ates
+Høgskulen på Vestlandet
+Rudolf Schlatte
+Universitetet i Oslo
+Martin Sachenbacher
+University of Lübeck
+Justus Sagemüller
+Western Norway University of Applied Sciences
+Violet Ka I Pun
+Western Norway University of Applied Sciences
+Nemanja Lakicevic
+UiO
+Lars Michael Kristensen
+Western Norway University of Applied Sciences
+Ole Jørgen Abusdal
+Western Norway University of Applied Sciences
+Jia-Chun Lin (Kellly)
+NTNU
+Shaukat Ali
+Simula Research Laboratory, Norway
+Guillaume Hiet
+CentraleSupélec
+Indika A. M. Balapuwaduge
+Researcher
+Lukas Esterle
+Aarhus University
+Eduard Kamburjan
+University of Oslo
+Adrian Rutle
+HVL
+Pierre Wilke
+CentraleSupélec
+JOSE IGNACIO REQUENO JARABO
+Universidad Complutense de Madrid (UCM)
+Ming-Chang Lee
+Høgskulen på Vestlandet
+Volker Stolz
+Høgskulen på Vestlandet
+Owais Qayyum
+UiT
+Issam Raïs
+UiT
+Loic Guegan
+UiT
+Håvard Johansen
+UiT
+Abdo Al-Wosabi
+UiT
+Areeg Samir Ahmed Elgazazz
+UiT
+Mohsin Khan
+UiT
