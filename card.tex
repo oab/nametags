@@ -1,20 +1,22 @@
-\definepapersize[nametag][width=90mm,height=54mm]
+\definepapersize[nametag][width=75mm,height=40mm]
 \setuppapersize[nametag]
 \setupbodyfont[dejavu,ss,10pt]
 \setuppagenumbering[state=stop]
 \setuplayout[%
-backspace=2mm,
+backspace=1mm,
 topspace=12mm,
-width=86mm,
+width=73mm,
 height=40mm,
 footer=0mm,
 header=0mm]
-\setupbackgrounds[page][background={logo}]
+\setupbackgrounds[page][background={logo,qr}]
 \showframe
 \starttext
 \startbuffer[card]
 \definelayer[logo][x=0mm,y=0mm,width=\paperwidth,height=\paperwidth]
 \setlayer[logo][hoffset=0mm,voffset=0mm]{\externalfigure[logo.pdf][height=12mm]}
+\definelayer[qr][x=0mm,y=0mm,width=\paperwidth,height=\paperwidth]
+\setlayer[qr][hoffset=59mm,voffset=25mm]{\externalfigure[coemsurl][height=16mm]}
 \blank[1mm]
 \startalignment[middle]
 \setuptype[style={\switchtobodyfont[16pt]}]
@@ -24,7 +26,7 @@ header=0mm]
 \setuptype[style={\switchtobodyfont[10pt]}]
 COEMS Forsterk Seminar\break
 \setuptype[style={\switchtobodyfont[8pt,tt]}]
-et eller annet navn
+1-2. Desember
 \stopalignment
 \page
 \stopbuffer
